@@ -14,6 +14,9 @@
   --background-dark: var(--clr-brown-800);
   --background-extra-dark: var(--clr-brown-900);
 
+  --font-family-heading: var(--ff-heading);
+  --font-family-body: var(--ff-body);
+
   --font-size-heading-sm: var(--fs-700);
   --font-size-heading-regular: var(--fs-800);
   --font-size-heading-lg: var(--fs-900);
@@ -27,4 +30,36 @@
   --border-radius-1: 0.25rem;
   --border-radius-2: 0.5rem;
   --border-radius-3: 0.75rem;
+}
+
+html {
+  font-family: var(--ff-body);
+  line-height: 1.6;
+}
+
+body {
+  background-color: var(--background-main);
+  color: var(--text-main);
+  font-size: var(--font-size-regular);
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--ff-heading);
+    color: var(--text-high-contrast);
+  }
+
+  h1 {
+    font-size: var(--font-size-heading-lg);
+  }
+
+  a {
+    color: var(--text-high-contrast);
+  }
+
+  a:hover,
+  a:focus-visible {
+    color: var(--text-brand-light);
+  }
 }
