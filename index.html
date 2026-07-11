@@ -21,20 +21,22 @@
   <body>
     <header class="primary-header">
       <div class="wrapper">
-        <img src="assets/fungi-finders.svg" alt="Fungi Finders" />
-        <nav class="primary-nav">
-          <ul>
-            <li>
-              <a href="/">Discover</a>
-            </li>
-            <li>
-              <a href="#">Mushroom guide</a>
-            </li>
-            <li>
-              <a href="#">FAQ</a>
-            </li>
-          </ul>
-        </nav>
+        <div class="primary-header__innner">
+          <img src="assets/fungi-finders.svg" alt="Fungi Finders" />
+          <nav class="primary-nav">
+            <ul role="list">
+              <li>
+                <a href="/">Discover</a>
+              </li>
+              <li>
+                <a href="#">Mushroom guide</a>
+              </li>
+              <li>
+                <a href="#">FAQ</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
 
@@ -74,7 +76,7 @@
             thrill of the hunt, and savor the satisfaction of finding a hidden
             culinary treasure.
           </p>
-          <div>
+          <div class="equal-columns">
             <div class="card">
               <img
                 src="/assets//outdoor-exploration.webp"
@@ -137,7 +139,12 @@
       </section>
 
       <section class="section background-extra-dark">
-        <div class="wrapper" data-width="wide">
+        <div
+          class="wrapper equal-columns"
+          data-width="wide"
+          data-gap="large"
+          data-alignment="centered"
+        >
           <div>
             <img
               src="assets/get-to-know.webp"
@@ -166,34 +173,36 @@
       </section>
 
       <section class="section">
-        <div class="wrapper" data-width="wide">
+        <div
+          class="wrapper equal-columns"
+          data-width="wide"
+          data-alignment="centered"
+        >
           <div>
-            <div>
-              <h2 class="section-title">Connect with Nature</h2>
-              <p>
-                Successful and safe mushroom foraging begins with a deep
-                understanding of the species you'll encounter in the wild - not
-                just what the edible ones look like, but their toxic
-                look-alikes, seasonal patterns, and preferred habitats.
-              </p>
-              <p>
-                Experience the beauty of the great outdoors while foraging for
-                mushrooms with fellow enthusiasts.
-              </p>
-              <a href="#"
-                >Learn More
-                <span class="sr-only">
-                  about the different types of mushrooms using our handy
-                  mushroom guide.
-                </span></a
-              >
-            </div>
-            <div>
-              <img
-                src="assets/nature.webp"
-                alt="two small white mushrooms growing on a mossy forest floor."
-              />
-            </div>
+            <h2 class="section-title">Connect with Nature</h2>
+            <p>
+              Successful and safe mushroom foraging begins with a deep
+              understanding of the species you'll encounter in the wild - not
+              just what the edible ones look like, but their toxic look-alikes,
+              seasonal patterns, and preferred habitats.
+            </p>
+            <p>
+              Experience the beauty of the great outdoors while foraging for
+              mushrooms with fellow enthusiasts.
+            </p>
+            <a href="#"
+              >Learn More
+              <span class="sr-only">
+                about the different types of mushrooms using our handy mushroom
+                guide.
+              </span></a
+            >
+          </div>
+          <div>
+            <img
+              src="assets/nature.webp"
+              alt="two small white mushrooms growing on a mossy forest floor."
+            />
           </div>
         </div>
       </section>
