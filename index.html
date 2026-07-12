@@ -23,7 +23,11 @@
       <div class="wrapper">
         <div class="primary-header__innner">
           <img src="assets/fungi-finders.svg" alt="Fungi Finders" />
-          <nav class="primary-nav">
+          <button aria-controls="primary-nav" aria-expanded="false">
+            <span class="sr-only">Menu</span>
+            <img src="/assets/hamburger.svg" alt="" />
+          </button>
+          <nav id="primary-nav" class="primary-nav">
             <ul role="list">
               <li>
                 <a href="/">Discover</a>
@@ -177,7 +181,7 @@
               It can feel like a big task, but we’ve got a handy reference guide
               to help you out!
             </p>
-            <a class="button"href="#"
+            <a class="button" href="#"
               ><span class="sr-only"
                 >Learn more about the wild mushrooms using our handy</span
               >Reference Guide</a
@@ -204,7 +208,7 @@
               Experience the beauty of the great outdoors while foraging for
               mushrooms with fellow enthusiasts.
             </p>
-            <a class="button"href="#"
+            <a class="button" href="#"
               >Learn More
               <span class="sr-only">
                 about the different types of mushrooms using our handy mushroom
@@ -226,5 +230,7 @@
       <p>Happy Foraging!</p>
       <a href="mailto:contact@fungifinders.com">contact@fungifinders.com</a>
     </footer>
+
+    <script src="scripts/main.js"></script>
   </body>
 </html>
