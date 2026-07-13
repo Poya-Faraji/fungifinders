@@ -2,6 +2,14 @@ const cardsElements = document.querySelectorAll(".mushroom-guide .card");
 const seasonSelectInput = document.getElementById("season");
 const edibileSelectInput = document.getElementById("edible");
 
+// if users have js disabled: start
+const enableSelectionFiltering = () => {
+  seasonSelectInput.hidden = false;
+  edibileSelectInput.hidden = false;
+};
+enableSelectionFiltering();
+// end
+
 const notResultMessageElem = document.querySelector(".no-results-message");
 const currentFilter = {
   season: seasonSelectInput.value.toLowerCase(),
