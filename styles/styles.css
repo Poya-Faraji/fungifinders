@@ -36,6 +36,13 @@
   html {
     font-family: var(--ff-body);
     line-height: 1.6;
+    scroll-padding: 3rem;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
   }
 
   body {
@@ -132,10 +139,10 @@
   }
 
   /* mushroom page */
-  .grid-auto-fit {
+  .grid-auto-fill {
     display: grid;
     gap: 1rem 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(250px, 100%), 1fr));
   }
 
   /* .flex-group {
@@ -428,6 +435,9 @@
 }
 
 @layer utilities {
+  [hidden] {
+    display: none;
+  }
   .text-center {
     text-align: center;
   }
