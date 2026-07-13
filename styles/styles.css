@@ -328,7 +328,7 @@
       color: var(--text-brand);
     }
   }
- 
+
   .tag-list {
     display: flex;
     flex-wrap: wrap;
@@ -367,7 +367,7 @@
     color: var(--text-high-contrast);
   }
 
-   .faq-bento {
+  .faq-bento {
     --card-title-color: var(--text-high-contrast);
 
     display: grid;
