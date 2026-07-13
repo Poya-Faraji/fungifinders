@@ -175,6 +175,10 @@
     border: 0;
     border-radius: var(--border-radius-2);
   }
+  .primary-header {
+    overflow-x: clip;
+    position: relative;
+  }
 
   .primary-header__innner {
     display: flex;
@@ -211,6 +215,15 @@
 
     @media (width < 720px) {
       display: none;
+      opacity: 0;
+      transition:
+        opacity 1s,
+        display 1s,
+        translate 1s;
+
+      transition-behavior: allow-discrete;
+      translate: 100% 0;
+
       position: absolute;
       z-index: 100;
       top: 0;
@@ -238,6 +251,12 @@
     /* same as commented code */
     [aria-expanded="true"] ~ & {
       display: block;
+      opacity: 1;
+      translate: 0 0;
+      @starting-style {
+        opacity: 0;
+        translate: 0 -100%;
+      }
     }
   }
 
