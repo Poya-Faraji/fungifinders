@@ -10,6 +10,11 @@ const enableSelectionFiltering = () => {
 enableSelectionFiltering();
 // end
 
+cardsElements.forEach((card, index) => {
+  const mushroomId = `mushroom-${index + 1}`;
+  card.style.viewTransitionName = `card-${mushroomId}`
+});
+
 const notResultMessageElem = document.querySelector(".no-results-message");
 const currentFilter = {
   season: seasonSelectInput.value.toLowerCase(),
@@ -45,7 +50,12 @@ const updateFilter = (e) => {
 
   if (filterType === "season" || filterType === "edible") {
     currentFilter[filterType] = e.target.value;
-    filterCards();
+
+    if (!document.startViewTransition()) {
+      filterCards();
+      return;
+    }
+    document.startViewTransition(() => filterCards());
   }
 };
 
