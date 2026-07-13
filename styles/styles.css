@@ -130,6 +130,13 @@
       max-width: var(--wrapper-width-narrow);
     }
   }
+
+  /* mushroom page */
+  .grid-auto-fit {
+    display: grid;
+    gap: 1rem 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+  }
 }
 
 @layer components {
