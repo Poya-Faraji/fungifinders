@@ -137,6 +137,11 @@
     gap: 1rem 1rem;
     grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
   }
+
+  /* .flex-group {
+    display: flex;
+    gap: 1rem;
+  } */
 }
 
 @layer components {
@@ -352,6 +357,13 @@
     [data-season="fall"] {
       --tag-bg-clr: var(--clr-orange-500);
     }
+  }
+
+  select {
+    padding: 0.5rem 1rem;
+    background-color: var(--background-accent-main);
+    border-radius: var(--border-radius-1);
+    color: var(--text-high-contrast);
   }
 }
 
